@@ -35,16 +35,16 @@ weatherBtn.addEventListener('click', () => {
             //remove current weather class helper function
             const remove = () => weatherContainer.classList.remove('sunny', 'cloudy', 'rain')
             
-            //check weather and add background
+            // //check weather and add background
             if (data.description.includes('Sunny')) {
                 remove()
                 weatherContainer.classList.add('sunny')
             }
-            if (data.description.includes('cloudy')) {
+            if (data.description.includes('Cloudy')) {
                 remove()
                 weatherContainer.classList.add('cloudy')
             }
-            if (data.description.includes('rain')) {
+            if (data.description.includes('Rain')) {
                 remove()
                 weatherContainer.classList.add('rain')
             }
@@ -71,3 +71,5 @@ advice.addEventListener('click', () => {
             adviceWrapper.innerText = post
     })
 })
+
+const carouselItems = document.querySelectorAll('.carousel-item')
